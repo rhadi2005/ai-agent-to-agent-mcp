@@ -22,7 +22,7 @@ The agent uses a combination of components:
 
 ## Prerequisites
 
-- Python 3.8+
+- Python 3.10+
 - Google Cloud account with Vertex AI API enabled
 - Google Cloud authentication configured
 
