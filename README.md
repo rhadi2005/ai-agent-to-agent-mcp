@@ -111,17 +111,3 @@ You can adjust the agent's behavior by modifying the instructions in:
 
 - `agent.py`: Change the main agent's instruction prompt
 - `sql_query_mcp_server.py`: Modify the SQL generation agent's prompt
-
-## Troubleshooting
-
-- **Authentication Issues**: Ensure Google Cloud credentials are properly set up
-- **Missing Examples**: Check that the example store was created successfully
-- **Database Connection**: Verify the Chinook database was downloaded correctly
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-[Add your license information here]
