@@ -3,7 +3,7 @@
 This project implements an intelligent SQL agent that can interpret natural language queries about a database, translate them into SQL, execute them, and provide human-friendly responses using the Google ADK (Agent Development Kit) framework.
 
 ## Project Overview
-
+![Diagram](sc.png)
 The agent uses a combination of components:
 
 - **Main Agent**: Handles natural language understanding and generates responses
