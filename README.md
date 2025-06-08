@@ -62,7 +62,7 @@ The agent uses a combination of components:
 To improve the agent's performance, you can ingest few-shot examples:
 
 ```bash
-python injest_examples.py --project your-project-id
+python ingest_examples.py --project your-project-id
 ```
 
 After running, you'll get an example store resource name that you should set in your `.env` file.

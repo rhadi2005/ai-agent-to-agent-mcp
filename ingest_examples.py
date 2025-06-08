@@ -145,12 +145,12 @@ def setup_auth():
         raise
 
 
-def create_or_get_example_store(embedding_model: str = "text-embedding-004") -> str:
+def create_or_get_example_store(embedding_model: str = "text-embedding-005") -> str:
     example_store_name = EXAMPLE_STORE_DISPLAY_NAME
 
     try:
         example_store = example_stores.ExampleStore(
-            example_store_name=os.getenv("EXAMPLE_STORE"))
+            example_store_name=os.getenv("EXAMPLE_STORE", example_store_name))
         print(
             f"Found existing Example Store from environment variable: {example_store_name}")
         return example_store
@@ -253,8 +253,8 @@ def main():
     parser.add_argument("--location", type=str, default=GOOGLE_CLOUD_LOCATION)
     parser.add_argument("--store-name", type=str, default=EXAMPLE_STORE_DISPLAY_NAME,
                         help="Display name for the Example Store")
-    parser.add_argument("--embedding-model", type=str, default="text-embedding-004",
-                        help="Embedding model to use (textembedding-gecko@003, text-embedding-004, or text-multilingual-embedding-002)")
+    parser.add_argument("--embedding-model", type=str, default="text-embedding-005",
+                        help="Embedding model to use (textembedding-gecko@003, text-embedding-005, or text-multilingual-embedding-002)")
     parser.add_argument("--force", action="store_true",
                         help="Force reingestion even if store already has examples")
 

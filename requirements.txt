@@ -1,3 +1,5 @@
+# ~/workspace/ai-lab/gcpai/bin/pip install -r requirements.txt
+
 google-cloud-aiplatform
 google-adk
 mcp
